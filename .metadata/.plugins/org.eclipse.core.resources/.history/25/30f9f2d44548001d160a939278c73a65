@@ -1,0 +1,21 @@
+package com.ps.exs.pservice;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ps.exs.feign.BankClient;
+import com.ps.exs.pentity.BankModel;
+
+@Service
+
+public class PassbookService {
+	@Autowired
+	private BankClient bankClient;
+   
+	public List<BankModel> getAll() {
+		// TODO Auto-generated method stub
+		return bankClient.getAll();
+	}
+}

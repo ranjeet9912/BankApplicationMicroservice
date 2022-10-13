@@ -1,0 +1,5 @@
+package com.ps.exs.feign;
+
+public interface UserClient {
+
+}
